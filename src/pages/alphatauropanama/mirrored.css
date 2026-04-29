@@ -1,0 +1,939 @@
+@font-face {
+  font-family: 'MichromaLocal';
+  src: url('/public_clean/alphatauropanama/alphatauropanama.com/wp-content/uploads/elementor/google-fonts/fonts/michroma-pn_zrfy9qwd8feagapg9ptk.woff2')
+    format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ManropeLocal';
+  src: url('/public_clean/alphatauropanama/alphatauropanama.com/wp-content/uploads/elementor/google-fonts/fonts/manrope-xn7gyhe41ni1adirggqxsuxd.woff2')
+    format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --alpha-bg: #060a13;
+  --alpha-bg-2: #0b1320;
+  --alpha-panel: #05070d;
+  --alpha-panel-2: #0c1320;
+  --alpha-line: rgba(255, 255, 255, 0.07);
+  --alpha-text: #f4f7fc;
+  --alpha-muted: #98a5bd;
+  --alpha-accent: #ff584d;
+  --alpha-blue: #2f68ff;
+  --alpha-shell: min(1180px, calc(100vw - 44px));
+  --alpha-title: 'MichromaLocal', sans-serif;
+  --alpha-body: 'ManropeLocal', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.alphatauro-body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, #050912 0%, #08111c 30%, #0b131f 100%);
+  color: var(--alpha-text);
+  font-family: var(--alpha-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.alphatauro-page {
+  position: relative;
+  overflow: clip;
+}
+
+.alphatauro-noise {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 14%, rgba(255, 88, 77, 0.08), transparent 28%),
+    radial-gradient(circle at 74% 18%, rgba(47, 104, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 55% 58%, rgba(47, 104, 255, 0.05), transparent 22%);
+}
+
+.topbar,
+.navbar,
+.section-shell,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+.topbar {
+  width: var(--alpha-shell);
+  margin: 0 auto;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--alpha-line);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--alpha-muted);
+  font-size: 0.76rem;
+}
+
+.topbar__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.topbar__social {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--alpha-line);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-family: var(--alpha-title);
+  font-size: 0.7rem;
+}
+
+.navbar {
+  width: var(--alpha-shell);
+  margin: 0 auto;
+  padding: 34px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar__logo,
+.footer__logo {
+  width: 158px;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+.Offers-Alpha-contenedor{
+  margin-bottom: 100px !important;
+}
+.Offers-Alpha{
+  background: url('/public_clean/alphatauropanama/alphatauropanama.com/wp-content/uploads/2024/05/Photo-Apr-29-2024-10-47-49-AM-scaled.jpg')
+    center / cover no-repeat;
+  position: relative;
+}
+
+.Offers-Alpha img{
+  width: 60%;
+  position: absolute;
+  bottom: 0px;
+  margin: 0px 0px -120px -30px;
+}
+.language-switcher__flag {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.language-switcher__flag img {
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.language-switcher__flag.is-active,
+.language-switcher__flag:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.pill-button {
+  min-width: 130px;
+  height: 44px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #ff6258 0%, #ff4f43 100%);
+  color: #fff;
+  font-family: var(--alpha-title);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 16px 36px rgba(255, 88, 77, 0.2);
+}
+
+.pill-button--full {
+  width: 100%;
+}
+
+.section-shell {
+  width: var(--alpha-shell);
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.section-tag,
+.benefit-card__eyebrow {
+  margin: 0 0 14px;
+  color: var(--alpha-accent);
+  font-family: var(--alpha-title);
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.section-heading h2,
+.provided__copy h2,
+.contact__panel h2 {
+  margin: 0;
+  font-family: var(--alpha-title);
+  font-size: clamp(1.65rem, 3vw, 3rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.96fr);
+  align-items: center;
+  gap: 30px;
+  padding-top: 44px;
+}
+
+.hero__copy {
+  max-width: 620px;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: var(--alpha-title);
+  font-size: 65px;
+  line-height: 0.92;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.hero__lead,
+.service-card p,
+.benefit-card li,
+.provided__list,
+.check-card p,
+.contact-card p,
+.footer-card p,
+.benefits__intro p {
+  color: var(--alpha-muted);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.hero__lead {
+  max-width: 560px;
+  margin: 28px 0 0;
+}
+
+.hero__visual {
+  position: relative;
+  min-height: 620px;
+}
+
+.hero__glow {
+  position: absolute;
+  inset: 5% 5% 12%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47, 104, 255, 0.38) 0%, rgba(47, 104, 255, 0.08) 38%, transparent 72%);
+  filter: blur(28px);
+}
+
+.hero__container {
+  position: absolute;
+  width: min(100%, 660px);
+  filter: drop-shadow(0 0 28px rgba(47, 104, 255, 0.42));
+}
+
+.hero__container--back {
+  right: 8%;
+  bottom: 2%;
+  width: min(78%, 520px);
+}
+
+.hero__container--front {
+  right: 2%;
+  top: 10%;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+  gap: 40px;
+}
+
+.services__grid {
+  display: grid;
+  gap: 10px;
+  padding: 50px;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 10px 0;
+}
+
+.service-card img {
+  width: 100%;
+  opacity: 0.92;
+}
+
+.service-card h3,
+.benefit-card h3,
+.check-card h3,
+.contact-card h3,
+.footer-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--alpha-title);
+  font-size: clamp(1rem, 1.5vw, 1.42rem);
+  line-height: 1.28;
+  text-transform: uppercase;
+}
+
+.service-card p,
+.contact-card p,
+.footer-card p {
+  margin: 0;
+}
+
+.provided {
+  align-items: center;
+  gap: 48px;
+  background-color: #FF493B;
+  color: white !important;
+  justify-content: center;
+  margin-top: 150px;
+  padding: 200px 0;
+}
+
+.services-tag{
+  color: white !important;
+}
+
+.provided-info{
+    display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(260px, 0.74fr);
+}
+
+.provided__list {
+  margin: 24px 0 0;
+  padding-left: 18px;
+}
+
+.provided__list li {
+  break-inside: avoid;
+  color: white !important;
+}
+
+.provided__visual {
+  display: grid;
+  justify-items: center;
+  gap: 28px;
+}
+
+.provided__logo {
+  width: 100%;
+  opacity: 0.9;
+  margin: -100px -15px -100px 0px;
+}
+
+.provided__icons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: end;
+}
+
+.provided__icons img {
+  max-height: 88px;
+  margin: 0 auto;
+  opacity: 0.92;
+}
+
+.benefits {
+  padding-top: 90px;
+}
+
+.benefits__intro {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin-bottom: 30px;
+}
+
+.benefits__intro p {
+  margin: 0;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.benefit-card,
+.contact-card,
+.footer-card,
+.check-card {
+  border: 1px solid var(--alpha-line);
+  background: rgba(3, 6, 12, 0.72);
+}
+
+.benefit-card {
+  min-height: 280px;
+  padding: 30px 28px;
+}
+
+.benefit-card__eyebrow {
+  margin-bottom: 12px;
+  letter-spacing: 0.18em;
+}
+
+.benefit-card ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.security {
+  padding-top: 92px;
+}
+.security-header{
+  text-align: center;
+  margin: auto;
+}
+
+.security-header h2{
+  font-size: 26px;
+  padding-bottom: 40px;
+}
+
+.security__layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.security__checks {
+  display: grid;
+  gap: 16px;
+}
+
+.check-card {
+  gap: 14px;
+  padding: 20px 22px;
+}
+
+.check-card__icon {
+  text-align: end;
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  display: grid;
+  color: var(--alpha-accent);
+  font-family: var(--alpha-title);
+  font-size: 2rem;
+}
+
+.check-card p {
+  margin: 0;
+  font-size: 22px;
+  font-family: var(--alpha-title);
+  font-weight: 200 !important;
+  color: white !important;
+}
+
+.security__video {
+  border: 1px solid var(--alpha-line);
+  background: rgba(5, 8, 14, 0.82);
+  overflow: hidden;
+}
+
+.security__video video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #030507;
+}
+
+.warehouse {
+  margin: 50px auto !important;
+}
+
+.warehouse .section-heading{
+  margin: auto;
+}
+
+.warehouse .section-heading .section-tag{
+  text-align: center;
+}
+
+.warehouse-img{
+  background: url('/public_clean/alphatauropanama/alphatauropanama.com/wp-content/uploads/2024/05/vista.jpg')
+    center / cover no-repeat;
+  min-height: 500px;
+}
+
+.gallery {
+  padding-top: 92px;
+}
+
+.gallery .section-heading{
+  margin: auto;
+  padding: 20PX;
+}
+
+.gallery .section-heading .section-tag{
+  text-align: center;
+}
+
+.gallery__grid {
+  display: grid;
+  gap: 18px;
+}
+
+.gallery__grid--dense {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gallery__item {
+  margin: 0;
+  aspect-ratio: 1 / 0.84;
+  overflow: hidden;
+  border: 1px solid var(--alpha-line);
+  background: #0b111a;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.04);
+}
+
+.firesystem{
+  padding: 50px 0;
+}
+
+.firesystem .section-tag{
+  text-align: center;
+}
+
+.fire__grid--dense {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--alpha-line);
+  background: #090e18;
+}
+
+.contact__panel {
+  display: flex;
+  min-height: 430px;
+}
+
+.contact__panel--info {
+  justify-content: flex-end;
+}
+
+.contact__panel--form {
+  justify-content: flex-start;
+  background: #0f171f;
+  background: url('/public_clean/alphatauropanama/alphatauropanama.com/wp-content/uploads/2024/05/vista.jpg')
+    center / cover no-repeat;
+  position: relative;
+}
+
+.background-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0B1117;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.contact__panel-inner {
+  width: min(600px, 100%);
+  padding: 70px 30px 50px;
+  z-index: 2;
+}
+
+.contact__divider {
+  width: 72px;
+  height: 1px;
+  margin: 28px 0 36px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.contact__methods {
+  display: grid;
+  gap: 28px;
+}
+
+.contact-method {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.contact-method__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--alpha-accent);
+  color: #fff;
+}
+
+.contact-method__icon svg,
+.footer-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-method h3 {
+  margin: 0 0 6px;
+  font-family: var(--alpha-title);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.contact-method p {
+  margin: 0;
+  color: var(--alpha-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 15px 0;
+  border: 0;
+}
+
+.contact-form__label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.86rem;
+  line-height: 1.3;
+}
+
+.contact-form__required {
+  color: var(--alpha-accent);
+}
+
+.contact-form__split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+
+.contact-form input {
+  height: 42px;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+  background: transparent;
+  color: var(--alpha-text);
+  font-size: 0.84rem;
+}
+
+.contact-form textarea {
+  min-height: 112px;
+  resize: vertical;
+  padding: 12px 14px;
+  background: #fff;
+  color: #09101a;
+}
+
+.contact-form input::placeholder {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.contact-form__recaptcha {
+  width: min(304px, 100%);
+  min-height: 78px;
+  margin-top: 10px;
+  padding: 13px 14px;
+  display: grid;
+  grid-template-columns: 28px 1fr 58px;
+  gap: 10px;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #d7d7d7;
+  color: #202124;
+  font-size: 0.82rem;
+}
+
+.contact-form__recaptcha-check {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #767676;
+  background: #fff;
+}
+
+.contact-form__recaptcha-brand {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  color: #555;
+  font-size: 0.55rem;
+}
+
+.contact-form__recaptcha-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  background:
+    linear-gradient(135deg, #4285f4 0 50%, transparent 50%),
+    linear-gradient(315deg, #34a853 0 50%, transparent 50%),
+    #fbbc05;
+}
+
+.contact-form__submit {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 0;
+  background: var(--alpha-accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 128px 0 0;
+  border-top: 1px solid var(--alpha-line);
+  display: grid;
+  justify-items: center;
+  gap: 34px;
+  background: #080c15;
+}
+
+.footer__cards {
+  width: var(--alpha-shell);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.footer-card {
+  min-height: 116px;
+  padding: 25px 30px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: #0f171f;
+  border: 0;
+}
+
+.footer-card__icon {
+  flex: 0 0 auto;
+  color: var(--alpha-accent);
+}
+
+.footer-card p {
+  margin: 0;
+  color: var(--alpha-text);
+  font-family: var(--alpha-title);
+  font-size: clamp(0.72rem, 0.95vw, 0.92rem);
+  line-height: 1.55;
+}
+
+.footer__copyright {
+  width: 100%;
+  margin: 26px 0 0;
+  padding: 22px max(22px, calc((100vw - 1180px) / 2)) 24px;
+  border-top: 1px solid var(--alpha-line);
+  color: var(--alpha-text);
+  font-size: 0.74rem;
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .services,
+  .provided,
+  .security__layout,
+  .contact,
+  .benefits__intro,
+  .contact__cards,
+  .footer__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__panel--form {
+    border-left: 0;
+    border-top: 1px solid var(--alpha-line);
+  }
+
+  .contact__panel--info,
+  .contact__panel--form {
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__visual {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --alpha-shell: min(100vw - 28px, 1180px);
+  }
+
+  .topbar,
+  .navbar,
+  .navbar__actions,
+  .benefits__grid,
+  .gallery__grid--dense,
+  .provided__list,
+  .provided__icons,
+  .contact-form__split {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .navbar,
+  .navbar__actions {
+    justify-items: start;
+  }
+
+  .topbar__meta {
+    gap: 10px;
+  }
+
+  .section-shell {
+  }
+
+  .hero {
+    padding-top: 24px;
+  }
+
+  .hero__visual {
+    min-height: 360px;
+  }
+
+  .hero__container--back {
+    right: 0;
+    width: 72%;
+  }
+
+  .hero__container--front {
+    right: 0;
+    width: 100%;
+  }
+
+  .contact__panel {
+    min-height: auto;
+  }
+
+  .contact__panel-inner {
+    padding: 50px 20px 34px;
+  }
+
+  .contact-method {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .contact-method__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer {
+    padding-top: 90px;
+  }
+
+  .footer-card {
+    min-height: 104px;
+    padding: 22px 20px;
+  }
+}
